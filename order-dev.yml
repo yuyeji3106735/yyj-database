@@ -11,6 +11,11 @@ spring:
   cloud:
     inetutils:
       ignored-interfaces[0]: eth0
+  rabbitmq:
+    host: 192.168.174.129
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:

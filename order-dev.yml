@@ -12,7 +12,7 @@ spring:
     inetutils:
       ignored-interfaces[0]: eth0
   rabbitmq:
-    host: localhost
+    host: 192.168.174.129
     port: 5672
     username: guest
     password: guest

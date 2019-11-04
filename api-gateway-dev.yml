@@ -5,11 +5,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 10000
-zuul:
-  host:
-    connect-timeout-millis: 60000
-    socket-timeout-millis: 60000
-  routes:
-    myProduct:
-      path: /myProduct/**
-      serviceId: product

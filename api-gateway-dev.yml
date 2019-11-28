@@ -1,19 +1,1 @@
-zuul:
-    #将localhost:8081/msg  路由到 locahost:product/msg
-  routes:
-    myProduct:
-      path: /myProduct/**
-      serviceId: product
-      #把sensitiveHeaders设置为空 即可传cookie对象进来了
-      sensitiveHeaders:
-  #简洁写法 product-->配置eureka上的serviceId /myProduct/** 指的是需要指定的路由路径
-   # product: /myProduct/**
-    #过滤路径
-  #ignored-patterns: /**/msg
-  #全局设置 开放所有路径都可传入敏感信息（cookie）
-  sensitive-headers:
 
-#查看所有路由的配置/application/routes  需要添加下面这个属性为false
-management:
-  security:
-    enabled: false
